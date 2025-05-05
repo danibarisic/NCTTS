@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>NorCal Time Trials Series - Home</title>
+    <link rel='stylesheet' href='nctss_3.css'>
+</head>
+
+<body>
+    <div class='headerContainer'>
+        <img class='imageContainerLogo' src='images/Logo.png' alt='NorCal Wheel Logo'>
+        <div class='titleContainer'>
+            <div class='title'>
+                <h1 class="scrolling-title">
+                    <span id='norcalRed' data-text='Norcal Time Trials Series'>NorCal</span> Time Trials Series
+                </h1>
+            </div>
+            <div class=" navBar">
+                <a class='btn' href='index.html'>Home</a>
+                <a class='btn' href='about.html'>About</a>
+                <a class='btn' href='general_info.html'>Information</a>
+                <a class='btn' href='rules.html'>Safety</a>
+                <a class='btn' href='contact.html'>Contact</a>
+                <a class='btn' href='registration.html'>Registration</a>
+            </div>
+        </div>
+    </div>
+
+    <div id='scroll-container'>
+        <div id='scroll-text'>Book your next race now!</div>
+    </div>
+
+    <h2 id=registration-title-container>Registration Form</h2>
+
+    <form action='show_data.html' method='get' class='form-container'>
+        <div class='form-row'>
+            <label for='first_name'>First Name:</label>
+            <input class='inputText' id='first_name' name='first_name' type='text'>
+            <label for='last_name'>Last Name:</label>
+            <input class='inputText' id='last_name' name='last_name' type='text'>
+        </div>
+        <div class='form-row'>
+            <label for='street_address'>Street Address:</label>
+            <input class='inputText' id='street_address' name='streetAddress' type='text'>
+        </div>
+        <div class='form-row'>
+            <label for='city'>City:</label>
+            <input class='inputText' id='city' name='city' type='text'>
+        </div>
+        <div class='form-row'>
+            <label for='zip_code'>Zip Code:</label>
+            <input class='inputText' id='zip_code' name='zipCode' type='text'>
+        </div>
+        <div class='form-row'>
+            <label for='age'>Age:</label>
+            <input class='inputText' id='age' name='age' type='text'>
+        </div>
+        <div class='form-row'>
+            <span>Gender:</span>
+            <label for='female'><span>Female</span>
+                <input class='checkbox' id='female' name='gender' type='radio'>
+            </label>
+            <label for='male'><span>Male</span>
+                <input class='checkbox' id='male' name='gender' type='radio'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label for='contact_phone'>Contact Phone:</label>
+            <input class='inputText' id='contact_phone' name='contactPhone' type='text'>
+        </div>
+        <div class='form-row'>
+            <label for='email'>Contact Email:</label>
+            <input class='inputText' id='email' name='email' type='email' placeholder='joe@example.com'>
+        </div>
+
+        <div class='registration-h4-container'>
+            <h4 class=registration-h4-container>Motorsports Organization Membership?</h4>
+        </div>
+
+
+        <div class='form-row'>
+            <label class='checkbox_label' for='membership_scca'><span>Sports Car Club of America (SCCA)</span>
+                <input class='checkbox' id='membership_scca' name='scca' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='membership_nasa'><span>National Autosport Association (NASA)</span>
+                <input class='checkbox' id='membership_nasa' name='nasa' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='membership_none'><span>None</span>
+                <input class='checkbox' id='membership_none' name='none' type='checkbox'>
+            </label>
+        </div>
+
+        <div class='registration-h4-container'>
+            <h4>Previous Competetive Experience?</h4>
+        </div>
+
+        <div class='form-row'>
+            <label class='checkbox_label' for='experience_none'><span>None</span>
+                <input class='checkbox' id='experience_none' name='none' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='experience_trackDays'><span>HPDE/Track Days</span>
+                <input class='checkbox' id='experience_trackDays' name='trackDays' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='experience_autoCross'><span>Autocross</span>
+                <input class='checkbox' id='experience_autoCross' name='autoCross' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='experience_oneYear'><span>One Year</span>
+                <input class='checkbox' id='experience_oneYear' name='oneYear' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='experience_twoYears'><span>Two Years</span>
+                <input class='checkbox' id='experience_twoYears' name='twoYears' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='experience_overTwoYears'><span>Over Two Years</span>
+                <input class='checkbox' id='experience_overTwoYears' name='overTwoYears' type='checkbox'>
+            </label>
+        </div>
+
+        <div class=registration-h4-container>
+            <h4>Racing License?</h4>
+        </div>
+
+        <div class='form-row'>
+            <label class='checkbox_label' for='license_none'><span>None></span>
+                <input class='checkbox' id='license_none' name='none' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='license_scca'><span>SCCA</span>
+                <input class='checkbox' id='license_scca' name='scca' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='license_nasa'><span>NASA</span>
+                <input class='checkbox' id='license_nasa' name='nasa' type='checkbox'>
+            </label>
+        </div>
+        <div class='form-row'>
+            <label class='checkbox_label' for='license_fia'><span>FIA</span>
+                <input class='checkbox' id='license_fia' name='fia' type='checkbox'>
+            </label>
+        </div>
+
+        <div class='agreement-container'>
+            <p>I agree that I will abide by all the rules of the NorCal Time Trial Series (NCTTS). I recognize that
+                Motorsports are inherently dangerous. I hereby release, discharge, and/or otherwise indemnify NCTTS,
+                their
+                employees and associated personnel and volunteers, including the facilities used for events, against any
+                claim by or on behalf of the registrant as a result of my participation in the series.
+            </p>
+            <p>By entering your name below, you hereby agree and authorize the above.
+            </p>
+        </div>
+
+
+        <div class='form-row' id=signature-container>
+            <label for='signature'>Registrant's Signature:</label>
+            <input class='inputText' id='signature' name='signature' type='text'>
+            <label for='date'>Date:</label>
+            <input class='inputText' id='date' name='date' type='text'>
+        </div>
+
+        <div class='register-button-container'>
+            <input type='submit' id='register-button' value='Submit'>
+        </div>
+
+    </form>
+
+
+
+    <footer>
+        <div class='footer-container'>
+            <p>&copy; 2025 Norcal Time Trials. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-service">Terms of Service</a></li>
+                <li><a href='contact.html'>Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
