@@ -32,6 +32,7 @@ h1 {
     font-family: Playwright;
     font-size: 70px;
     white-space: nowrap;
+    padding-right: 2rem;
     overflow: hidden;
     animation: scrollHeader 10s linear infinite;
 }
@@ -159,7 +160,7 @@ h4 {
 
 .imageContainerLogo:hover {
     transform: translateY(-10%);
-    transition-duration: .5s;
+    transition-duration: .3s;
     transform: scaleX(1.1) scaleY(1.1);
 }
 
@@ -350,6 +351,11 @@ ol {
     margin-bottom: 30px;
 }
 
+.scrolling-container {
+    display: flex;
+    width: max-content;
+}
+
 #scroll-text {
     font-family: Raleway;
     font-size: 25px;
@@ -362,26 +368,25 @@ ol {
 }
 
 .scroll-text::after {
-    content: attr(data-text);
     position: absolute;
     animation: scroll 8s linear infinite;
 }
 
 @keyframes scrollHeader {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
         /* Start off-screen to the right */
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
         /* End in the middle of the screen, with the second <h1> following */
     }
 }
 
 @keyframes scrollText {
     from {
-        transform: translateX(50%);
+        transform: translateX(20%);
     }
 
     to {
